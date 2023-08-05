@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestão Alphalife</title>
+    <link rel="stylesheet" href="./status.css">
+    <script src="./status.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <aside class="lado">
+            <img src="Logo-Alphalife.webp" alt=""> <p class="p-img">ALPHALIFE</p>
+            <nav>
+                <ul>
+
+                    <li> <i icon-name="shapes" class="my-class"></i> 
+                        
+                        <p class="p-1">
+                            <a href="status.html" class="a-1">
+                                Status de equipe
+                            </a>
+                        </p>
+                    </li>
+
+                    <li> <i icon-name="arrow-up-wide-narrow" class="my-class"></i> 
+                        
+                        <p class="p-1">
+                            <a href="projetos.html" class="a-1">
+                                Projetos
+                            </a>
+                        </p>
+                    </li>
+
+                    <li> <i icon-name="clipboard-check" class="my-class"></i> 
+                        
+                        <p class="p-1">
+                            <a href="tarefas.html" class="a-1">
+                                Tarefas
+                            </a>
+                        </p>
+                    </li>
+
+                    <script src="https://unpkg.com/lucide@latest"></script>
+                    <script>
+                      lucide.createIcons();
+                    </script>
+                </ul>    
+            </nav>
+
+        </aside>
+
+        
+        <main>Main
+
+            <header>
+
+                <h1 class="h-h1" style="text-align: center;">Membros da equipe</h1>
+
+        
+            </header>
+
+
+                    <header class="header-2">
+                        
+                        <div class="h2-button">
+                            <h2>Cadastro de membros</h2>
+                            <button id="buttonIdBtn" class="button" type="button"><p style="margin-left: 25px; margin-top: 3px;" >Adcinar</p></button>
+                        </div>
+                        
+
+                        <div class="tabela">
+                            <span class="span-p">
+                                <p>Nome</p>
+                                
+                                <p>Profissao</p>
+                                <p>Experiencia</p>
+                            </span>
+                            <span class="span-E-E">
+                                <p>Editar</p>
+                                <p>Excluir</p>
+                            </span>
+                            
+
+
+                            <form id="devForm" class="devFormClass">
+                                
+                                <h4 style="position: fixed; margin-left: 36px;">Cadastrar novo membro</h4> 
+                                <i data-lucide="x" style="margin-top: 10px; margin-left: 218px;" class="classIcon-x"></i>
+
+                                <script src="https://unpkg.com/lucide@latest"></script>
+                                <script>
+                                lucide.createIcons();
+                                </script>
+                                
+                                <p class="devForm-p">
+                                    <label for="nome"></label>
+                                    <input type="text" name="nome" id="nome" placeholder="Nome:">
+                                    <label for="profissao"></label>
+                                    <input type="text" name="profissao" id="profissao" placeholder="Profissao:">
+                                    <label for="experiencia"></label>
+                                    <input type="text" name="experiencia" id="experiencia" placeholder="Experiencia:">
+
+                                    
+                                </p>
+
+                                <!-- <ul id="nomeId"></ul> -->
+                                <!-- <ul id="profissaoId"></ul>
+                                <ul id="experienciaId"></ul> -->
+                            </form>
+                            
+                            <div class="listMemberUl">
+                            <ul style="position: fixed; margin-left: -7px;" class="ul-1" id="nomeId"></ul>
+                            <ul style="position: fixed; margin-left: 245px;" class="ul-2" id="profissaoId"></ul>
+                            <ul style="position: fixed; margin-left: 522px;" class="ul-3" id="experienciaId"></ul>
+                            </div>
+                            <button class="addMemberClass" onclick="addMember()">Salvar</button>
+                            
+
+                    </header>
+
+        </main>
+    </div>
+
+    
+
+</body>
+</html>
